@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+        .header {
+            padding: 50px;
+            text-align: center;
+            background: #dbdcde;
+            color: rgb(237, 5, 5);
+        }
+        .navbar {
+            display: flex;
+            background-color: #dc8d8d;
+        }
+        .navbar a {
+            color: aliceblue;
+            padding: 15px 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: blue;
+            color: rgb(241, 5, 5);
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side {
+            flex: 25%;
+            background-color: rgb(219, 212, 203);
+            padding: 20px;
+        }
+        .main {
+            flex: 75%;
+            background-color: azure;
+            padding: 20px;
+        }
+        .fimg {
+            background-color: #c9c5c5;
+            width: 100%;
+            padding: 20px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #dc8d8d;
+        }
+        @media screen and (max-width: 800px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div style="background-color: blanchedalmond; padding: 10px;">
+        <h3 style="text-align: center;">The H3</h3>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Website cua toi</h1>
+        <p>mot so noi dung</p>
+    </div>
+    <!-- Menu -->
+    <div class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+    <!-- Content -->
+    <div class="row">
+        <div class="side">
+            <h2>Gioi thieu</h2>
+            <h3>Trang 1</h3>
+            <p>Noi dung noi dung noi dung Noi dung noi dung noi dung Noi dung noi dung noi dung </p>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <h2>Day la main 1</h2>
+            <h5>Noi dung cua main 1</h5>
+            <div class="fimg" style="height: 200px;">Image</div>
+            <p>text text text text text text text text text text text text </p>
+            <br/>
+            <h2>Noi dung Main 2</h2>
+            <h5>Noi dung cua main 2</h5>
+            <div class="fimg" style="height: 200px;">Image</div>
+            <p>text text text text text text text text text text text text </p>
+            <br/>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
